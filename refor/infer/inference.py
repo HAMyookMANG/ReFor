@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from PIL import Image
 from torchvision import transforms
-from data import residualizer, val_tfms_geometric
+from refor.data.data import residualizer, val_tfms_geometric
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 @torch.no_grad()

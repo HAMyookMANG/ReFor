@@ -1,11 +1,13 @@
 import os
 import torch
-from data import make_binary_loaders, make_attr_loaders
-from models import ResNetHead
-from train_utils import fit_model, device
-from e2e_eval import evaluate_two_stage_full_val
+from refor.data.data import make_binary_loaders, make_attr_loaders
+from refor.models.models import ResNetHead
+from refor.train.train_utils import fit_model
+from refor.eval.e2e_eval import evaluate_two_stage_full_val
+from refor.core.env import device, seed_all 
 
 if __name__ == "__main__":
+    seed_all(42)
     BASE_DATASET_ROOT = "/content/prnu_dataset/data"
     VAL_RATIO = 0.2
     SEED = 42

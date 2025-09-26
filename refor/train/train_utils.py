@@ -4,8 +4,7 @@ import torch
 import torch.nn as nn
 from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+from refor.core.env import device
 
 def accuracy_from_logits(logits, y):
     pred = logits.argmax(dim=1)

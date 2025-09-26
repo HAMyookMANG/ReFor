@@ -1,17 +1,17 @@
 import sys, subprocess
 
 def _pip_install(pkgs):
-    """Safely install a list of pip packages."""
     for p in pkgs:
         print(f"[bootstrap] installing: {p}")
         subprocess.check_call([sys.executable, "-m", "pip", "install", "--quiet"] + p.split())
 
 def ensure_deps():
-    # mirrors: !pip -q install --upgrade torch torchvision scikit-learn
-    #          !pip -q install gdown==4.6.0
-    _pip_install(["--upgrade torch torchvision scikit-learn", "gdown==4.6.0"])
+    _pip_install([
+        "--upgrade pip setuptools wheel",
+        "--upgrade torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121",
+        "scikit-learn pillow matplotlib gdown==4.6.0",
+    ])
 
-# Optionally import common libs so other scripts can rely on them being present
 def import_common():
     import os, math, random, io, itertools, json, warnings, hashlib, shutil
     from typing import List, Tuple, Optional, Dict

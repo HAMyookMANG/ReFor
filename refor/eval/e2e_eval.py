@@ -5,8 +5,8 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from PIL import Image
 from sklearn.metrics import classification_report, confusion_matrix
-from data import ResidualBinaryDataset, val_tfms_geometric, residualizer, _split_indices
-from eval_balanced import _plot_cm
+from refor.data.data import ResidualBinaryDataset, val_tfms_geometric, residualizer, _split_indices
+from refor.eval.eval_balanced import _plot_cm
 import numpy as np
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

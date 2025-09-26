@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import DataLoader, WeightedRandomSampler
 from PIL import Image
 from torchvision import transforms
-from residual import ToResidualTensor
+from refor.data.residual import ToResidualTensor
 
 IMG_SIZE = 224
 IMG_EXTS = ('.jpg', '.jpeg', '.png', '.bmp', '.webp')
