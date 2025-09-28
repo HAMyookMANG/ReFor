@@ -102,6 +102,3 @@ print(result)
 
 * GPU 환경에서 실행하는 것을 권장합니다.
 * Torchvision 버전에 따라 `weights=...` 대신 `pretrained=True`를 사용해야 할 수 있습니다.
-
-```
-```
