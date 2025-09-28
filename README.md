@@ -75,7 +75,7 @@ python ReFor/scripts/main.py
 
 ## 추론 예시
 
-단일 이미지에 대해 2단계 추론을 수행하려면:
+단일 이미지에 대해 2단계 추론을 수행하려면
 
 ```python
 from refor.inference.inference import predict_two_stage
@@ -95,6 +95,8 @@ attr.load_state_dict(torch.load(f"{DATA_ROOT}/_ckpts_multi/attr_full_best.pth"))
 result = predict_two_stage("test.jpg", binary, attr, attr_classes, tta=True, fake_threshold=0.5)
 print(result)
 ```
+
+수행하려면 실행 방법을 따라 실행 후 .pth파일을 생성한 후 해당 모델 파일을 사용해야합니다.
 
 ---
 
