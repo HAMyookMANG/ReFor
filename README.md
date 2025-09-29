@@ -14,20 +14,20 @@ ReFor/
 │   ├── main.py             # 학습 및 평가 엔트리포인트
 │   └── bootstrap.py        # 의존성 설치 스크립트
 └── refor/
-├── core/
-│   └── env.py          # 환경 초기화 (시드 고정, 디바이스 설정)
-├── data/
-│   ├── data.py         # Dataset / DataLoader 정의
-│   └── residual.py     # ToResidualTensor (PRNU 변환)
-├── eval/
-│   ├── e2e_eval.py     # 전체 파이프라인 검증
-│   └── eval_balanced.py# Confusion Matrix 시각화
-├── models/
-│   └── models.py       # ResNetHead 모델 정의
-├── train/
-│   └── train_utils.py  # 학습/평가 루프 및 유틸 함수
-└── inference/
-└── inference.py    # 단일 이미지 추론 함수
+│  ├── core/
+│     └── env.py          # 환경 초기화 (시드 고정, 디바이스 설정)
+│  ├── data/
+│     ├── data.py         # Dataset / DataLoader 정의
+│     └── residual.py     # ToResidualTensor (PRNU 변환)
+│  ├── eval/
+│     ├── e2e_eval.py     # 전체 파이프라인 검증
+│     └── eval_balanced.py# Confusion Matrix 시각화
+│  ├── models/
+│     └── models.py       # ResNetHead 모델 정의
+│  ├── train/
+│     └── train_utils.py  # 학습/평가 루프 및 유틸 함수
+│  └── infer/
+      └── inference.py    # 단일 이미지 추론 함수
 
 ```
 
