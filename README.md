@@ -13,21 +13,24 @@ ReFor/
 ├── scripts/
 │   ├── main.py
 │   └── bootstrap.py
-└── refor/
-    ├── core/
-    │   └── env.py
-    ├── data/
-    │   ├── data.py
-    │   └── residual.py
-    ├── eval/
-    │   ├── e2e_eval.py
-    │   └── eval_balanced.py
-    ├── models/
-    │   └── models.py
-    ├── train/
-    │   └── train_utils.py
-    └── infer/
-        └── inference.py
+├── refor/
+│   ├── core/
+│   │   └── env.py
+│   ├── data/
+│   │   ├── data.py
+│   │   └── residual.py
+│   ├── eval/
+│   │   ├── e2e_eval.py
+│   │   └── eval_balanced.py
+│   ├── models/
+│   │   └── models.py
+│   ├── train/
+│   │   └── train_utils.py
+│   └── infer/
+│       └── inference.py
+├── ReFor.ipynb
+├── ReForwithUnknownTest.ipynb
+└── run.sh
 
 ```
 
