@@ -100,7 +100,7 @@ result = predict_two_stage("test.jpg", binary, attr, attr_classes, tta=True, fak
 print(result)
 ```
 
-<span style="color:red">**수행하려면 실행 방법을 따라 실행 후 `.pth` 파일을 생성한 후 해당 모델 파일을 사용해야 합니다.**</span>
+**⚠️ 수행하려면 실행 방법을 따라 실행 후 `.pth` 파일을 생성한 후 해당 모델 파일을 사용해야 합니다.**
 
 ---
 
