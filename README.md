@@ -56,6 +56,7 @@ ReFor/
 - `ModelA`, `ModelB` 등 폴더 이름은 **생성 모델 이름**이어야 합니다.
 - 각 모델 폴더 안에는 반드시 `0_real/`, `1_fake/` 하위 폴더가 있어야 합니다.
 - 최소 하나 이상의 모델 폴더가 필요합니다.
+- 실험에서는 [**DIF dataset**](https://sergo2020.github.io/DIF/)을 사용했습니다.
 
 ---
 
@@ -99,11 +100,10 @@ result = predict_two_stage("test.jpg", binary, attr, attr_classes, tta=True, fak
 print(result)
 ```
 
-수행하려면 실행 방법을 따라 실행 후 .pth파일을 생성한 후 해당 모델 파일을 사용해야합니다.
+<span style="color:red">**수행하려면 실행 방법을 따라 실행 후 `.pth` 파일을 생성한 후 해당 모델 파일을 사용해야 합니다.**</span>
 
 ---
 
 ## 참고
 
 * GPU 환경에서 실행하는 것을 권장합니다.
-* Torchvision 버전에 따라 `weights=...` 대신 `pretrained=True`를 사용해야 할 수 있습니다.
